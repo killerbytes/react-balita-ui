@@ -1,0 +1,59 @@
+@import 'abstract/variables';
+@import 'abstract/mixin';
+
+@import 'components/editor';
+@import 'components/forms';
+@import 'components/header';
+@import 'components/posts';
+@import 'components/buttons';
+@import 'components/labels';
+@import 'components/loading';
+@import 'components/social_buttons';
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+}
+h1,h2,h3,h4,h5{
+  font-family: 'Oswald', sans-serif;  
+}
+.mb{ margin-bottom: 1rem; }
+.container{
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin: auto;
+  @include respond-to(small){
+    max-width: 990px;
+  }
+}
+
+.list-default{
+  @include list-default;
+}
+
+.flex{
+  @include respond-to(small){
+    display: flex;
+    .main{
+      padding-right: 1rem;
+      margin-right: 1rem;
+    }
+    aside{
+      max-width: 250px;
+      min-width: 250px;
+    }
+  }
+}
+
+.title{
+  text-transform: capitalize;
+}
+
+.time{
+  color: #AAA;
+  font-size: 12px;
+}

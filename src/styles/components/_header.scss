@@ -1,0 +1,13 @@
+header{
+  background-color: #FFF;
+  margin-bottom: 1rem;
+  border-bottom: 3px solid $primary;
+  h1{
+    margin: 0;
+    padding: 1rem 0;
+    a{
+      color: $primary;
+      text-decoration: none;
+    }
+  }
+}
