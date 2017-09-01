@@ -1,2 +1,1 @@
-/news /
-/news/:id /news/:id
+/news/* /news/:splat
